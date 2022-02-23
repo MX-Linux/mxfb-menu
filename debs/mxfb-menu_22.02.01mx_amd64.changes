@@ -1,0 +1,52 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 22 Feb 2022 18:52:09 -0500
+Source: mxfb-menu
+Binary: mxfb-menu
+Architecture: source all
+Version: 22.02.01mx
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Description:
+ mxfb-menu  - Localization for fluxbox and openbox menus.
+Changes:
+ mxfb-menu (22.02.01mx) mx; urgency=medium
+ .
+   * Initial build.
+Checksums-Sha1:
+ 9380947ae40a8ff01eeda966d64605261d72b2d9 1504 mxfb-menu_22.02.01mx.dsc
+ 031767ba0490d41ea1a158c66789ad8928c23648 32776 mxfb-menu_22.02.01mx.tar.xz
+ 69360cebda5fc807f039e9d233ece9d8e3d85885 25684 mxfb-menu_22.02.01mx_all.deb
+ d9645667f3a57745d3fc09d2fbdc0977673a5a37 7072 mxfb-menu_22.02.01mx_amd64.buildinfo
+Checksums-Sha256:
+ 5272299cd8f0430b388503c6ba3cc97c157825f485a536992e5878689c0b0cc7 1504 mxfb-menu_22.02.01mx.dsc
+ d81df0c3f58b0d7164577136cd2fc6d2f702aff179907304f66cf32aa98373f0 32776 mxfb-menu_22.02.01mx.tar.xz
+ 1841db8ee085e3a3d86b01d7c966363e134456102128c9bb48c8732491e0d746 25684 mxfb-menu_22.02.01mx_all.deb
+ a3b97c28ded8a1b790cf1f74310f59aac714cb302e03b74a76607059b754db7c 7072 mxfb-menu_22.02.01mx_amd64.buildinfo
+Files:
+ 1ea2682cc25b456308413b41ddafa71f 1504 x11 optional mxfb-menu_22.02.01mx.dsc
+ 95196ac964fcbf3436c39d4600126a5e 32776 x11 optional mxfb-menu_22.02.01mx.tar.xz
+ 73ae2fce5792c79d05f5bd7655d6e6ee 25684 x11 optional mxfb-menu_22.02.01mx_all.deb
+ 88d99557eeb8471227ea7794c81a0c1a 7072 x11 optional mxfb-menu_22.02.01mx_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmIVgwATHGZlaGxpeEBt
+eGxpbnV4Lm9yZwAKCRAvV48brJ2b6ZemEACvSnrGy/ywY4nQUz34epF8L9dYWoDR
+/fivRCZo8NKptkmPuMChE0u2x2FcttTuTW5qfVBvG+EGYdUutVCr2OQfqoK+3s8O
+vitKeHK+lZMP1QHIbHl/c571MV4FJXmdP4eKpKir4EGwXEAcgIQuyDCqzY48+O+A
+6xwKPJjGOeKOxCgbGsQHxEwUBD/xCmoPlvl+l7xuJsbQ7jsgJqP/EKhlaTOVRhGN
+vD06gxauHjsD86tFsph3B0PsS4oe1NwnOc9otuzePSZZi3Sr9bnJTfChsAdqCJVn
+SxyKNyeQi4J9RaKYPGr9t3T0LvVD9Y70sPZ1pyVnlCaNGMg8SudnjbuFlSldXXXI
+Ala6ddEm7SW8yWcRD4ZiQpqCoI+We3m1sg1kpq2WBjxqm61/lDABdFnYfTG7SVZj
+d5Vd7LWzaTFTlQOVzhx1nHiDaXFhobNdk4X9LLzNrjez6+sz3SeYxYZEx5xbp4ef
+PKLHtSk13MgKUFS7QkLLPK91+8W1cHzqJ+hzgLs4S/JSBRFWxar3omoG2ugZvKI/
+xlp+OdmNrmc31va1yrpZHfzOUPY+0Hz6pI/O1fdZAL+hL5EGwApawTrGFHIp2gU2
+heQGCssYSV36mKPQ3gu6SJ0IwBtb0/Bz1gSBkF/fF0X/MQmRcjBTJZGdDdl0gC2H
+zF1GLE9HaFbOsw==
+=tpMC
+-----END PGP SIGNATURE-----

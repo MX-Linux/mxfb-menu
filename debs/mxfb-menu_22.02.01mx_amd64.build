@@ -1,0 +1,163 @@
+ dpkg-buildpackage -us -uc -ui -sa
+dpkg-buildpackage: info: source package mxfb-menu
+dpkg-buildpackage: info: source version 22.02.01mx
+dpkg-buildpackage: info: source distribution mx
+dpkg-buildpackage: info: source changed by fehlix <fehlix@mxlinux.org>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean  --builddirectory=../mesonbuild
+   dh_auto_clean -O--builddirectory=../mesonbuild
+   dh_autoreconf_clean -O--builddirectory=../mesonbuild
+   dh_clean -O--builddirectory=../mesonbuild
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building mxfb-menu in mxfb-menu_22.02.01mx.tar.xz
+dpkg-source: info: building mxfb-menu in mxfb-menu_22.02.01mx.dsc
+ debian/rules build
+dh build  --builddirectory=../mesonbuild
+   dh_update_autotools_config -O--builddirectory=../mesonbuild
+   dh_autoreconf -O--builddirectory=../mesonbuild
+   dh_auto_configure -O--builddirectory=../mesonbuild
+	cd /tmpdir/build/mxfb-menu/../mesonbuild && LC_ALL=C.UTF-8 meson /tmpdir/build/mxfb-menu --wrap-mode=nodownload --buildtype=plain --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libdir=lib/x86_64-linux-gnu
+The Meson build system
+Version: 0.56.2
+Source dir: /tmpdir/build/mxfb-menu
+Build dir: /tmpdir/build/mesonbuild
+Build type: native build
+Project name: mxfb-menu
+Project version: 22.02.01mx
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Build targets in project: 3
+
+Found ninja-1.10.1 at /usr/bin/ninja
+   dh_auto_build -O--builddirectory=../mesonbuild
+	cd /tmpdir/build/mxfb-menu/../mesonbuild && LC_ALL=C.UTF-8 ninja -j4 -v
+ninja: no work to do.
+   dh_auto_test -O--builddirectory=../mesonbuild
+	cd /tmpdir/build/mxfb-menu/../mesonbuild && LC_ALL=C.UTF-8 MESON_TESTTHREADS=4 ninja test
+[0/1] Running all tests.
+No tests defined.
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary  --builddirectory=../mesonbuild
+   dh_testroot -O--builddirectory=../mesonbuild
+   dh_prep -O--builddirectory=../mesonbuild
+   dh_auto_install -O--builddirectory=../mesonbuild
+	cd /tmpdir/build/mxfb-menu/../mesonbuild && DESTDIR=/tmpdir/build/mxfb-menu/debian/mxfb-menu LC_ALL=C.UTF-8 ninja install
+[0/1] Installing files.
+Installing /tmpdir/build/mesonbuild/po/am.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/am/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/ar.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/ar/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/bg.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/bg/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/ca.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/ca/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/cs.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/cs/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/da.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/da/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/de.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/de/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/el.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/el/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/es.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/es/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/es_ES.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/es_ES/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/fa.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/fa/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/fi.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/fi/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/fr.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/fr/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/fr_BE.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/fr_BE/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/gl_ES.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/gl_ES/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/he_IL.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/he_IL/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/hi.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/hi/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/hr.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/hr/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/id.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/id/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/is.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/is/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/it.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/it/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/ja.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/ja/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/lt.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/lt/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/nb.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/nb/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/nl.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/nl/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/pl.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/pl/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/pt.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/pt/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/pt_BR.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/pt_BR/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/ru.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/ru/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/sk.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/sk/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/sl.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/sl/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/sq.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/sq/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/sv.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/sv/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/tr.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/tr/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/uk.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/uk/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/zh_CN.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/zh_CN/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mesonbuild/po/zh_TW.gmo to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/locale/zh_TW/LC_MESSAGES/mxfb-menu.mo
+Installing /tmpdir/build/mxfb-menu/data/menu-mx to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/mxfb-menu/fluxbox
+Installing /tmpdir/build/mxfb-menu/data/appearance to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/mxfb-menu/fluxbox
+Installing /tmpdir/build/mxfb-menu/data/out-of-sight to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/mxfb-menu/fluxbox
+Installing /tmpdir/build/mxfb-menu/data/settings to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/mxfb-menu/fluxbox
+Installing /tmpdir/build/mxfb-menu/data/menu-mx.xml to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/share/mxfb-menu/openbox
+Installing /tmpdir/build/mxfb-menu/data/menu-mx.xml to /tmpdir/build/mxfb-menu/debian/mxfb-menu/etc/xdg/openbox
+Installing /tmpdir/build/mxfb-menu/src/mxfb-menu-fb-l10n to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/bin
+Installing /tmpdir/build/mxfb-menu/src/mxfb-menu-ob-l10n to /tmpdir/build/mxfb-menu/debian/mxfb-menu/usr/bin
+Running custom install script '/usr/bin/meson --internal gettext install --subdir=po --localedir=share/locale --pkgname=mxfb-menu'
+   dh_installdocs -O--builddirectory=../mesonbuild
+   dh_installchangelogs -O--builddirectory=../mesonbuild
+   dh_installinit -O--builddirectory=../mesonbuild
+   dh_installsystemduser -O--builddirectory=../mesonbuild
+   dh_perl -O--builddirectory=../mesonbuild
+   dh_link -O--builddirectory=../mesonbuild
+   dh_strip_nondeterminism -O--builddirectory=../mesonbuild
+	Normalized debian/mxfb-menu/usr/share/locale/zh_TW/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/zh_CN/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/uk/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/tr/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/sv/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/sq/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/sl/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/sk/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/ru/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/pt_BR/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/pt/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/pl/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/nl/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/nb/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/lt/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/ja/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/it/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/is/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/id/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/hr/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/hi/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/he_IL/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/gl_ES/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/fr_BE/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/fr/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/fi/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/fa/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/es_ES/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/es/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/el/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/de/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/da/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/cs/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/ca/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/bg/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/ar/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/am/LC_MESSAGES/mxfb-menu.mo
+   dh_compress -O--builddirectory=../mesonbuild
+   dh_fixperms -O--builddirectory=../mesonbuild
+   dh_missing -O--builddirectory=../mesonbuild
+   dh_installdeb -O--builddirectory=../mesonbuild
+   dh_gencontrol -O--builddirectory=../mesonbuild
+   dh_md5sums -O--builddirectory=../mesonbuild
+   dh_builddeb -O--builddirectory=../mesonbuild
+dpkg-deb: building package 'mxfb-menu' in '../mxfb-menu_22.02.01mx_all.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges -sa >../mxfb-menu_22.02.01mx_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build .
+dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+Now signing changes and any dsc files...
+ signfile dsc mxfb-menu_22.02.01mx.dsc fehlix <fehlix@mxlinux.org>
+
+ fixup_buildinfo mxfb-menu_22.02.01mx.dsc mxfb-menu_22.02.01mx_amd64.buildinfo
+ signfile buildinfo mxfb-menu_22.02.01mx_amd64.buildinfo fehlix <fehlix@mxlinux.org>
+
+ fixup_changes dsc mxfb-menu_22.02.01mx.dsc mxfb-menu_22.02.01mx_amd64.changes
+ fixup_changes buildinfo mxfb-menu_22.02.01mx_amd64.buildinfo mxfb-menu_22.02.01mx_amd64.changes
+ signfile changes mxfb-menu_22.02.01mx_amd64.changes fehlix <fehlix@mxlinux.org>
+
+Successfully signed dsc, buildinfo, changes files
