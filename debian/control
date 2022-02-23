@@ -1,0 +1,18 @@
+Source: mxfb-menu
+Section: x11
+Priority: optional
+Maintainer: fehlix <fehlix@mxlinux.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-python,
+ gnome-pkg-tools (>= 0.21),
+ meson (>= 0.52.0),
+Standards-Version: 3.9.6
+
+Package: mxfb-menu
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Depends:
+ python3,
+ ${misc:Depends}
+Description: Localization for fluxbox and openbox menus.

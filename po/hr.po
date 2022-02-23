@@ -1,0 +1,269 @@
+# Croatian translations for mxfb-menu package.
+# This file is put in the public domain.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mxfb-menu\n"
+"Report-Msgid-Bugs-To: translations@mxlinux.org\n"
+"POT-Creation-Date: 2022-02-22 20:48+0000\n"
+"PO-Revision-Date: 2022-02-22 20:48+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "All apps"
+msgstr ""
+
+msgid "Appearance"
+msgstr "Izgled"
+
+msgid "Apps"
+msgstr ""
+
+msgid "Autostart"
+msgstr ""
+
+msgid "Backup"
+msgstr ""
+
+msgid "Basic settings"
+msgstr ""
+
+msgid "Browser"
+msgstr "Preglednik"
+
+msgid "Change"
+msgstr ""
+
+msgid "Configure"
+msgstr "Konfiguriraj"
+
+#. The name of the Conky system monitor
+msgid "Conky"
+msgstr "Conky"
+
+#. Turn Conky Off or On
+msgid "Conky (toggle)"
+msgstr ""
+
+msgid "Default"
+msgstr "Zadano"
+
+msgid "Desktop icons"
+msgstr "Ikone radne površine"
+
+#. Desktop icons (off/in)
+msgid "Desktop icons (toggle)"
+msgstr ""
+
+msgid "Detailed settings"
+msgstr ""
+
+msgid "Disable default dock"
+msgstr ""
+
+msgid "Display"
+msgstr ""
+
+#. Special dock for touchscreen use
+msgid "Dock (touchscreen)"
+msgstr ""
+
+#. The name of the Dockmaker tool
+msgid "Dockmaker"
+msgstr ""
+
+msgid "Docks"
+msgstr ""
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Exit"
+msgstr ""
+
+msgid "File manager"
+msgstr ""
+
+msgid "Fluxbox"
+msgstr "Flubox"
+
+msgid "Help"
+msgstr "Pomoć"
+
+#. The name of Fluxbox init file - do not translate
+msgid "Init"
+msgstr ""
+
+msgid "Keyboard"
+msgstr ""
+
+#. Hot keys / keyboard shortcuts
+msgid "Keys"
+msgstr ""
+
+#. Close a window
+msgid "Kill a window"
+msgstr ""
+
+#. Close the dock
+msgid "Kill dock"
+msgstr ""
+
+msgid "Leave"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+msgid "MX Settings manager"
+msgstr ""
+
+msgid "Main"
+msgstr "Glavni"
+
+msgid "Menu--desktop"
+msgstr ""
+
+msgid "Menu--detailed"
+msgstr ""
+
+msgid "Menus"
+msgstr ""
+
+#. To start desktop system info monitors tool
+msgid "Monitors"
+msgstr ""
+
+msgid "Music"
+msgstr "Glazba"
+
+#. Do not translate
+msgid "Openbox 3"
+msgstr ""
+
+#. Hide 
+msgid "Out of sight"
+msgstr ""
+
+#. The style overlay
+msgid "Overlay"
+msgstr ""
+
+msgid "Reboot"
+msgstr "Restartování"
+
+msgid "Recent files"
+msgstr "Nedavne datoteke"
+
+msgid "Refresh"
+msgstr "Osvježi"
+
+msgid "Rotate"
+msgstr ""
+
+msgid "Run"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Separate"
+msgstr ""
+
+msgid "Settings"
+msgstr "Postavke"
+
+msgid "Settings manager"
+msgstr ""
+
+msgid "Shutdown"
+msgstr "Vypnutí"
+
+msgid "Special dock"
+msgstr ""
+
+msgid "Special panel"
+msgstr ""
+
+msgid "Startup"
+msgstr ""
+
+msgid "Style"
+msgstr "Stil"
+
+msgid "Styles"
+msgstr ""
+
+msgid "Suspend"
+msgstr "Uspání"
+
+#. notification area
+msgid "Systray"
+msgstr ""
+
+msgid "Terminal"
+msgstr "Terminál"
+
+msgid "Theme"
+msgstr "Tema"
+
+#. To turn Off/On autohide of the dock
+msgid "Toggle autohide dock"
+msgstr ""
+
+#. To turn Off/On autohide of the tint2 panel
+msgid "Toggle autohide panel"
+msgstr ""
+
+#. To turn Off/On autohide of the tint2 dock
+msgid "Toggle autohide panel-dock"
+msgstr ""
+
+#. To turn Off/On autohide of the Fluxbox toolbar
+msgid "Toggle autohide toolbar"
+msgstr ""
+
+#. Turn Conky Off or On 
+msgid "Toggle conky"
+msgstr ""
+
+#. To disable / enable iDesk tool
+msgid "Toggle iDesk"
+msgstr ""
+
+#. To switch display of desktop icons Off or On provide by iDesk tool
+msgid "Toggle icons"
+msgstr ""
+
+#. To turn Off/On the system monitors tool
+msgid "Toggle monitors"
+msgstr ""
+
+msgid "Toolbar"
+msgstr ""
+
+#. To turn off / on the dock for touchscreen
+msgid "Touch dock (toggle)"
+msgstr ""
+
+msgid "Touchscreen"
+msgstr ""
+
+msgid "Traditional"
+msgstr ""
+
+msgid "Update list"
+msgstr ""
+
+msgid "Wallpaper"
+msgstr "Tapeta"
+
+msgid "Window"
+msgstr "Prozor"

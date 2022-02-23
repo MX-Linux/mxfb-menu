@@ -1,0 +1,128 @@
+#!/usr/bin/python3
+
+import gettext, os, re
+import xml.etree.ElementTree as ET
+from subprocess import run, DEVNULL
+
+#-----------------------------------------------------------------------
+# directories and files
+#-----------------------------------------------------------------------
+# menu file name: menu-mx.xml
+menu_file  = "menu-mx.xml"
+# menu file localized: menu-mx_{LOCALE}.xml, e.g. menu-mx_pt_BR.xml
+# LOCALE := ll  || ll_RR  ( ll - language code ; RR - region code)
+
+home = os.getenv("HOME")
+pkg_dir = f"/usr/share/mxfb-menu/openbox"
+sys_dir = f"/etc/xdg/openbox"
+usr_dir = f"{home}/.config/openbox"
+
+pkg_menu_path     = f"{pkg_dir}/{menu_file}"
+sys_menu_path     = f"{sys_dir}/{menu_file}"
+usr_menu_path     = f"{usr_dir}/{menu_file}"
+usr_menu_l10n_dir = f"{usr_dir}/l10n"
+rc_xml            = f"{usr_dir}/rc.xml"
+
+#-----------------------------------------------------------------------
+# gettext translations - localization (l10n)
+#-----------------------------------------------------------------------
+domain     = "mxfb-menu"
+localedir  = "/usr/share/locale"
+
+def gettext_translate(lang="en"):
+	return gettext.translation(domain, localedir=localedir, languages=(lang,), fallback=True).gettext
+
+#-----------------------------------------------------------------------
+# removesuffix - available with python 3.9
+#-----------------------------------------------------------------------
+def remove_suffix(text, suffix=None):
+	if suffix:
+		if not suffix.startswith('.'):
+			suffix = f".{suffix}"
+		return text[:-len(suffix)] if text.endswith(suffix) else text
+	else:
+		return text.rsplit(".",1)[0]
+
+#-----------------------------------------------------------------------
+# locale context
+#-----------------------------------------------------------------------
+locale = os.getenv("LC_ALL") or os.getenv("LC_MESSAGES") or os.getenv("LANG")
+locale = remove_suffix(locale)
+lang = locale.split("_")[0]
+locales = [locale, lang]
+(f"locales ={locales}")
+lang = [ x for x in locales if os.path.exists(f"{localedir}/{x}/LC_MESSAGES/{domain}.mo") ]
+( lang ) = ( lang[0] if lang else "")
+if not lang:
+	lang = "en"
+	
+#-----------------------------------------------------------------------
+# xml namespace
+#-----------------------------------------------------------------------
+ns={'': 'http://openbox.org/'}
+ET.register_namespace('', ns[''])
+
+with open(pkg_menu_path, 'r') as file:
+	try:
+		tree = ET.parse(file)
+		root = tree.getroot()
+	except Exception as e:
+		print(e)
+		exit(e)
+
+#-----------------------------------------------------------------------
+# translate
+#-----------------------------------------------------------------------
+_ = gettext_translate(lang)
+for el in root.iterfind(".//*[@label]", ns):
+	label = el.get('label')
+	if label is not None:
+		el.set('label', _(label))
+
+#-----------------------------------------------------------------------
+# save
+#-----------------------------------------------------------------------
+if not os.path.isdir(usr_menu_l10n_dir):
+	os.mkdir(usr_menu_l10n_dir)
+menu_l10n  = usr_menu_l10n_dir + "/"
+menu_l10n += remove_suffix(menu_file, ".xml")
+menu_l10n += f"_{lang}.xml"
+
+if not os.path.exists(menu_l10n):
+	with open(menu_l10n, 'w') as f:
+		(menu_l10n)
+		tree.write(f, encoding="unicode", xml_declaration=True, default_namespace='')
+		f.write("\n")
+
+#-----------------------------------------------------------------------
+if os.path.exists(menu_l10n):
+	if os.path.islink(usr_menu_path):
+		os.remove(usr_menu_path)
+	if os.path.exists(usr_menu_path):
+		bak = f"{usr_menu_path}.bak"
+		if os.path.exists(bak):
+			os.remove(bak)
+		os.rename(usr_menu_path, bak)
+	os.symlink(menu_l10n, usr_menu_path)
+
+#-------------------------------------------------
+try:
+	with open(rc_xml, 'r+') as f:
+		rc = f.read()
+		fmx="<file>menu-mx.xml</file>"
+		fmm="<file>menu.xml</file>"
+		if fmx not in rc and fmm in rc:
+			rc = rc.replace(fmm, f"{fmx}\n    {fmm}")
+			f.seek(0)
+			f.write(rc)
+except Exception as e:
+	print(e)
+	exit(1)
+#-------------------------------------------------
+
+try:
+    run(["pidof", "-q", "openbox"], check=True, stderr=DEVNULL, stdout=DEVNULL)
+    print("openbox  --reconfigure")
+    run(["openbox", "--reconfigure"], stderr=DEVNULL, stdout=DEVNULL)
+except:
+    print("openbox not running")

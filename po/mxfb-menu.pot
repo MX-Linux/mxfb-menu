@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mxfb-menu\n"
+"Report-Msgid-Bugs-To: translations@mxlinux.org\n"
+"POT-Creation-Date: 2022-02-22 20:48+0000\n"
+"PO-Revision-Date: 2022-02-22 20:48+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: translations@mxlinux.org\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "All apps"
+msgstr ""
+
+msgid "Appearance"
+msgstr ""
+
+msgid "Apps"
+msgstr ""
+
+msgid "Autostart"
+msgstr ""
+
+msgid "Backup"
+msgstr ""
+
+msgid "Basic settings"
+msgstr ""
+
+msgid "Browser"
+msgstr ""
+
+msgid "Change"
+msgstr ""
+
+msgid "Configure"
+msgstr ""
+
+#. The name of the Conky system monitor
+msgid "Conky"
+msgstr ""
+
+#. Turn Conky Off or On
+msgid "Conky (toggle)"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Desktop icons"
+msgstr ""
+
+#. Desktop icons (off/in)
+msgid "Desktop icons (toggle)"
+msgstr ""
+
+msgid "Detailed settings"
+msgstr ""
+
+msgid "Disable default dock"
+msgstr ""
+
+msgid "Display"
+msgstr ""
+
+#. Special dock for touchscreen use
+msgid "Dock (touchscreen)"
+msgstr ""
+
+#. The name of the Dockmaker tool
+msgid "Dockmaker"
+msgstr ""
+
+msgid "Docks"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Exit"
+msgstr ""
+
+msgid "File manager"
+msgstr ""
+
+msgid "Fluxbox"
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+#. The name of Fluxbox init file - do not translate
+msgid "Init"
+msgstr ""
+
+msgid "Keyboard"
+msgstr ""
+
+#. Hot keys / keyboard shortcuts
+msgid "Keys"
+msgstr ""
+
+#. Close a window
+msgid "Kill a window"
+msgstr ""
+
+#. Close the dock
+msgid "Kill dock"
+msgstr ""
+
+msgid "Leave"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+msgid "MX Settings manager"
+msgstr ""
+
+msgid "Main"
+msgstr ""
+
+msgid "Menu--desktop"
+msgstr ""
+
+msgid "Menu--detailed"
+msgstr ""
+
+msgid "Menus"
+msgstr ""
+
+#. To start desktop system info monitors tool
+msgid "Monitors"
+msgstr ""
+
+msgid "Music"
+msgstr ""
+
+#. Do not translate
+msgid "Openbox 3"
+msgstr ""
+
+#. Hide 
+msgid "Out of sight"
+msgstr ""
+
+#. The style overlay
+msgid "Overlay"
+msgstr ""
+
+msgid "Reboot"
+msgstr ""
+
+msgid "Recent files"
+msgstr ""
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Rotate"
+msgstr ""
+
+msgid "Run"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Separate"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Settings manager"
+msgstr ""
+
+msgid "Shutdown"
+msgstr ""
+
+msgid "Special dock"
+msgstr ""
+
+msgid "Special panel"
+msgstr ""
+
+msgid "Startup"
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Styles"
+msgstr ""
+
+msgid "Suspend"
+msgstr ""
+
+#. notification area
+msgid "Systray"
+msgstr ""
+
+msgid "Terminal"
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+#. To turn Off/On autohide of the dock
+msgid "Toggle autohide dock"
+msgstr ""
+
+#. To turn Off/On autohide of the tint2 panel
+msgid "Toggle autohide panel"
+msgstr ""
+
+#. To turn Off/On autohide of the tint2 dock
+msgid "Toggle autohide panel-dock"
+msgstr ""
+
+#. To turn Off/On autohide of the Fluxbox toolbar
+msgid "Toggle autohide toolbar"
+msgstr ""
+
+#. Turn Conky Off or On 
+msgid "Toggle conky"
+msgstr ""
+
+#. To disable / enable iDesk tool
+msgid "Toggle iDesk"
+msgstr ""
+
+#. To switch display of desktop icons Off or On provide by iDesk tool
+msgid "Toggle icons"
+msgstr ""
+
+#. To turn Off/On the system monitors tool
+msgid "Toggle monitors"
+msgstr ""
+
+msgid "Toolbar"
+msgstr ""
+
+#. To turn off / on the dock for touchscreen
+msgid "Touch dock (toggle)"
+msgstr ""
+
+msgid "Touchscreen"
+msgstr ""
+
+msgid "Traditional"
+msgstr ""
+
+msgid "Update list"
+msgstr ""
+
+msgid "Wallpaper"
+msgstr ""
+
+msgid "Window"
+msgstr ""

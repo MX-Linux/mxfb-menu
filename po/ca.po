@@ -1,0 +1,267 @@
+# Catalan translations for mxfb-menu package.
+# This file is put in the public domain.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mxfb-menu\n"
+"Report-Msgid-Bugs-To: translations@mxlinux.org\n"
+"POT-Creation-Date: 2022-02-22 20:48+0000\n"
+"PO-Revision-Date: 2022-02-22 20:48+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "All apps"
+msgstr "Totes les aplicacions"
+
+msgid "Appearance"
+msgstr "Aspecte"
+
+msgid "Apps"
+msgstr ""
+
+msgid "Autostart"
+msgstr ""
+
+msgid "Backup"
+msgstr "Còpia de seguretat"
+
+msgid "Basic settings"
+msgstr ""
+
+msgid "Browser"
+msgstr "Navegador"
+
+msgid "Change"
+msgstr ""
+
+msgid "Configure"
+msgstr "Configura"
+
+#. The name of the Conky system monitor
+msgid "Conky"
+msgstr "Conky"
+
+#. Turn Conky Off or On
+msgid "Conky (toggle)"
+msgstr ""
+
+msgid "Default"
+msgstr "Per defecte"
+
+msgid "Desktop icons"
+msgstr "Icones de l'esriptori"
+
+#. Desktop icons (off/in)
+msgid "Desktop icons (toggle)"
+msgstr ""
+
+msgid "Detailed settings"
+msgstr ""
+
+msgid "Disable default dock"
+msgstr ""
+
+msgid "Display"
+msgstr "Pantalla"
+
+#. Special dock for touchscreen use
+msgid "Dock (touchscreen)"
+msgstr ""
+
+#. The name of the Dockmaker tool
+msgid "Dockmaker"
+msgstr ""
+
+msgid "Docks"
+msgstr "Docks"
+
+msgid "Email"
+msgstr "Correu"
+
+msgid "Exit"
+msgstr ""
+
+msgid "File manager"
+msgstr ""
+
+msgid "Fluxbox"
+msgstr "Fluxbox"
+
+msgid "Help"
+msgstr "Ajuda"
+
+#. The name of Fluxbox init file - do not translate
+msgid "Init"
+msgstr ""
+
+msgid "Keyboard"
+msgstr "Teclat"
+
+#. Hot keys / keyboard shortcuts
+msgid "Keys"
+msgstr ""
+
+#. Close a window
+msgid "Kill a window"
+msgstr ""
+
+#. Close the dock
+msgid "Kill dock"
+msgstr ""
+
+msgid "Leave"
+msgstr ""
+
+msgid "Logout"
+msgstr "Sortida"
+
+msgid "MX Settings manager"
+msgstr ""
+
+msgid "Main"
+msgstr "Principal"
+
+msgid "Menu--desktop"
+msgstr ""
+
+msgid "Menu--detailed"
+msgstr ""
+
+msgid "Menus"
+msgstr ""
+
+#. To start desktop system info monitors tool
+msgid "Monitors"
+msgstr ""
+
+msgid "Music"
+msgstr "Música"
+
+#. Do not translate
+msgid "Openbox 3"
+msgstr ""
+
+#. Hide 
+msgid "Out of sight"
+msgstr ""
+
+#. The style overlay
+msgid "Overlay"
+msgstr ""
+
+msgid "Reboot"
+msgstr "Reinicia"
+
+msgid "Recent files"
+msgstr "Fitxers recents"
+
+msgid "Refresh"
+msgstr "Refresca"
+
+msgid "Rotate"
+msgstr ""
+
+msgid "Run"
+msgstr "Executa"
+
+msgid "Select"
+msgstr "Selecciona"
+
+msgid "Separate"
+msgstr ""
+
+msgid "Settings"
+msgstr "Paràmetres"
+
+msgid "Settings manager"
+msgstr ""
+
+msgid "Shutdown"
+msgstr "Atura"
+
+msgid "Special dock"
+msgstr ""
+
+msgid "Special panel"
+msgstr ""
+
+msgid "Startup"
+msgstr "Engegada"
+
+msgid "Style"
+msgstr "Estil"
+
+msgid "Styles"
+msgstr "Estils"
+
+msgid "Suspend"
+msgstr "Suspèn"
+
+#. notification area
+msgid "Systray"
+msgstr ""
+
+msgid "Terminal"
+msgstr "Terminal"
+
+msgid "Theme"
+msgstr "Tema"
+
+#. To turn Off/On autohide of the dock
+msgid "Toggle autohide dock"
+msgstr ""
+
+#. To turn Off/On autohide of the tint2 panel
+msgid "Toggle autohide panel"
+msgstr ""
+
+#. To turn Off/On autohide of the tint2 dock
+msgid "Toggle autohide panel-dock"
+msgstr ""
+
+#. To turn Off/On autohide of the Fluxbox toolbar
+msgid "Toggle autohide toolbar"
+msgstr ""
+
+#. Turn Conky Off or On 
+msgid "Toggle conky"
+msgstr ""
+
+#. To disable / enable iDesk tool
+msgid "Toggle iDesk"
+msgstr ""
+
+#. To switch display of desktop icons Off or On provide by iDesk tool
+msgid "Toggle icons"
+msgstr ""
+
+#. To turn Off/On the system monitors tool
+msgid "Toggle monitors"
+msgstr ""
+
+msgid "Toolbar"
+msgstr "Barra d'eines"
+
+#. To turn off / on the dock for touchscreen
+msgid "Touch dock (toggle)"
+msgstr ""
+
+msgid "Touchscreen"
+msgstr ""
+
+msgid "Traditional"
+msgstr ""
+
+msgid "Update list"
+msgstr ""
+
+msgid "Wallpaper"
+msgstr "Empaperat"
+
+msgid "Window"
+msgstr "Finestra"

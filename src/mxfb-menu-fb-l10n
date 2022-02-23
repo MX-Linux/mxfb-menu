@@ -1,0 +1,273 @@
+#!/usr/bin/python3
+
+from subprocess import run, DEVNULL
+import gettext, os, re
+
+#-----------------------------------------------------------------------
+# directories and files
+#-----------------------------------------------------------------------
+# menu file name: menu-mx
+# menu file localized: menu-mx_{LOCALE}.xml, e.g. menu-mx_pt_BR.xml
+# LOCALE := ll  || ll_RR  ( ll - language code ; RR - region code)
+menu  = "menu-mx"
+
+home = os.getenv("HOME")
+fbxhome = f"{home}/.fluxbox"
+fbxmenu = f"{fbxhome}/{menu}"
+init    = f"{fbxhome}/init"
+l10ndir = f"{fbxhome}/l10n"
+xdgdirs = (os.getenv("XDG_DATA_DIRS") or '/usr/local/share:/usr/share').split(':')
+xdgdata = [ '~./local/share' ] + xdgdirs
+fbx_dir =  [ f"{x}/mxfb-menu/fluxbox" for x in xdgdata if os.path.isdir(f"{x}/mxfb-menu/fluxbox") ][0]
+xdg_menu = f"{fbx_dir}/{menu}"
+
+#-----------------------------------------------------------------------
+# submenu includes ignored
+#-----------------------------------------------------------------------
+ignored = [ "recent_files_menu" ]
+
+#-----------------------------------------------------------------------
+# gettext translations - localization (l10n)
+#-----------------------------------------------------------------------
+domain     = "mxfb-menu"
+localedir  = "/usr/share/locale"
+
+def gettext_translate(lang="en"):
+	return gettext.translation(domain, localedir=localedir,
+					languages=(lang,), fallback=True).gettext
+
+#-----------------------------------------------------------------------
+# removesuffix
+#-----------------------------------------------------------------------
+def remove_suffix(text, suffix=None):
+	if suffix:
+		if not suffix.startswith('.'):
+			suffix = f".{suffix}"
+		return text[:-len(suffix)] if text.endswith(suffix) else text
+	else:
+		return text.rsplit(".",1)[0]
+
+#-----------------------------------------------------------------------
+# locale context
+locale = os.getenv("LC_ALL") or os.getenv("LC_MESSAGES") or os.getenv("LANG")
+locale = remove_suffix(locale)
+lang = locale.split("_")[0]
+locales = [locale, lang]
+#print(f"locales ={locales}")
+lang = [ x for x in locales if os.path.exists(f"{localedir}/{x}/LC_MESSAGES/{domain}.mo") ]
+( lang ) = ( lang[0] if lang else "")
+if not lang:
+	lang = "en"
+_ = gettext_translate(lang)
+
+	
+if lang in "en":
+	with open(init, 'r+') as file:
+		try:
+			ini = file.read()
+			reg = re.compile(fr"^(session.menuFile:\s*)~/.fluxbox/{menu}\s*$", flags = re.MULTILINE)
+			if reg.search(ini):
+				exit
+			else:
+				reg = re.compile(r"^session.menuFile:.*$", flags = re.MULTILINE)
+				new = f"session.menuFile:\t~/.fluxbox/{menu}"
+				ini = re.sub(reg, new, ini)
+			file.seek(0)
+			file.write(ini)
+			exit(0)	
+		except Exception as e:
+			print(e)
+			exit(1)
+
+#-----------------------------------------------------------------------
+# pattern
+pap = re.compile(r"^.*\[include\][^\(]*\(\s*([^\s].*[^\s])\s*\)", re.MULTILINE)
+pat = re.compile(r"^(\s*[^#!\s].*[]]\s*)\(\s*([^\s][^\)]+[^\s])\s*\)", re.MULTILINE)
+pas = re.compile(r"^(.*\[submenu\].*{{)\s*([^\s].*[^\s])\s*(}}.*)", re.MULTILINE)
+pai = re.compile(r"^(.*\[(include|stylesdir|stylesmenu|wallpapers|workspaces)\].*\(){([^}]*)}(.*)", re.MULTILINE)
+
+#-----------------------------------------------------------------------
+# menu file
+with open(xdg_menu, 'r') as file:
+	try:
+		m = file.read()
+	except Exception as e:
+		print(e)
+		exit(1)
+#-----------------------------------------------------------------------
+# submenu includes
+includes = [ x for x in re.findall(pap, m) if x and x.split('/')[-1] not in ignored ]
+subnames = { x.split('/')[-1] : x for x in includes if x and x.split('/')[-1] }
+subfiles = { f"{fbx_dir}/{x}": y   for (x,y) in subnames.items() if os.path.exists(f"{fbx_dir}/{x}") }
+
+mm = m
+inc2l10n = {}
+
+for subfile in subfiles.keys():
+	if not subfile:
+		continue
+	
+	subname = subfile.split('/')[-1]
+	
+	l10nfile = f"{l10ndir}/{subname}_{lang}"
+	
+	if os.path.isfile(l10nfile):
+		continue
+	#-----------------------------------------------------------------------
+	# menu file
+	with open(subfile, 'r') as file:
+		try:
+			m = file.read()
+		except Exception as e:
+			print(e)
+			continue
+			pass
+	
+	tr = { s: _(s) for r, s in re.findall(pat, m) }
+	#print(f"#------------------------------\n{tr}")
+	m = m.replace('{','{{').replace('}','}}')
+	m = re.sub(pat, r"\1({\2})", m)
+	#print(f"#------------------------------\n{m}")
+	ts = { s: _(s) for r, s, t in re.findall(pas, m) }
+	tr.update(ts)
+	#print(f"#------------------------------\n{tr}")
+	#print(f"#---xxxxxxxxxxxxxxxxxxxxxxx---\n{m}")
+	m = re.sub(pas, r"\1{\2}\3", m)
+	#print(f"#---xxxxxxxxxxxxxxxxxxxxxxx---\n{m}")
+	#print(re.sub(pai, r"\1\3\4", m))
+	m = re.sub(pai, r"\1\3\4", m)
+	m = m.format(**tr)
+	#print("#------------------------------")
+	#print(f"#---xxxxxxxxxxxxxxxxxxxxxxx---\n{m}")
+	#exit()
+	#print(f"# {subfile}")
+	#print("#------------------------------")
+	#print(dict(ts))
+	#print(dict(tr))
+	#print(re.findall(pap, m))
+		
+	if not os.path.isdir(l10ndir):
+		try:
+			os.makedirs(l10ndir, exist_ok=True)
+		except:
+			print(e)
+			continue
+	with open(l10nfile, 'w') as file:
+		try:
+			file.write(m)
+			file.write(m)
+			inc2l10n[subfiles[subfile]] = l10nfile
+		except Exception as e:
+			print(e)
+			continue
+			pass
+
+for l10nfile in inc2l10n.values():
+	with open(l10nfile, 'r+') as file:
+		try:
+			m= file.read()
+			for (inc, l10n) in inc2l10n.items():
+				if os.path.isfile(l10n):
+					#print(f"m = m.replace({inc}, {l10n.replace(f'{home}', '~')}")
+					m = m.replace(inc, l10n.replace(f'{home}', '~'))
+			file.seek(0)
+			file.write(m)
+		except Exception as e:
+			print(e)
+			continue
+			pass
+
+m = mm
+
+for (inc, l10n) in inc2l10n.items():
+	if os.path.isfile(l10n):
+		#print(f"m = m.replace({inc}, {l10n.replace(f'{home}', '~')}")
+		m = m.replace(inc, l10n.replace(f'{home}', '~'))
+
+if not os.path.isdir(l10ndir):
+	try:
+		os.makedirs(l10ndir, exist_ok=True)
+	except:
+		print(e)
+		exit(1)
+
+#-----------------------------------------------------------------------
+# localize menu file
+#-----------------------------------------------------------------------
+menufile = f"{l10ndir}/{menu}_{lang}"
+if not os.path.isfile(menufile):
+	tr = { s: _(s) for r, s in re.findall(pat, m) }
+	#print(f"#------------------------------\n{tr}")
+	m = m.replace('{','{{').replace('}','}}')
+	m = re.sub(pat, r"\1({\2})", m)
+	#print(f"#------------------------------\n{m}")
+	ts = { s: _(s) for r, s, t in re.findall(pas, m) }
+	tr.update(ts)
+	#print(f"#------------------------------\n{tr}")
+	#print(f"#---xxxxxxxxxxxxxxxxxxxxxxx---\n{m}")
+	m = re.sub(pas, r"\1{\2}\3", m)
+	#print(f"#---xxxxxxxxxxxxxxxxxxxxxxx---\n{m}")
+	#print(re.sub(pai, r"\1\3\4", m))
+	m = re.sub(pai, r"\1\3\4", m)
+	m = m.format(**tr)
+	#print("#------------------------------")
+	#print(f"#---xxxxxxxxxxxxxxxxxxxxxxx---\n{m}")
+	#exit()
+	#print(f"# {subfile}")
+	#print("#------------------------------")
+	#print(dict(ts))
+	#print(dict(tr))
+	#print(re.findall(pap, m))
+	
+	
+	#print(f"{includes}")
+	#print(f"{subfiles}")
+	#print(f"{inc2l10n}")
+	
+	with open(menufile, 'w') as file:
+		try:
+			file.write(m)
+		except Exception as e:
+			print(e)
+			exit(1)
+
+#-----------------------------------------------------------------------
+# adjust localized  submenu files
+#-----------------------------------------------------------------------
+fbxmenu  = fbxmenu.replace(f'{home}', '~')
+mfile = menufile.replace(f'{home}', '~')
+for l10nfile in inc2l10n.values():
+	with open(l10nfile, 'r+') as file:
+		try:
+			m= file.read()
+			if os.path.isfile(menufile):
+				#print(f"m = m.replace({fbxmenu}, {mfile})")
+				m = m.replace(fbxmenu, mfile)
+			file.seek(0)
+			file.write(m)
+		except Exception as e:
+			print(e)
+			continue
+			pass
+
+#-----------------------------------------------------------------------
+# adjust init
+#-----------------------------------------------------------------------
+with open(init, 'r+') as file:
+	try:
+		ini = file.read()
+		ini = ini.replace(f'{home}', '~')
+		reg = re.compile(fr"^(session.menuFile:\s*){mfile}\s*$", flags = re.MULTILINE)
+		if reg.search(ini):
+			exit
+		else:
+			reg = re.compile(r"^session.menuFile:.*$", flags = re.MULTILINE)
+			new = f"session.menuFile:\t{mfile}"
+			ini = re.sub(reg, new, ini)
+		file.seek(0)
+		file.write(ini)
+		exit(0)	
+	except Exception as e:
+		print(e)
+		exit(1)
+

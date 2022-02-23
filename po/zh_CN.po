@@ -1,0 +1,267 @@
+# Chinese translations for mxfb-menu package.
+# This file is put in the public domain.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mxfb-menu\n"
+"Report-Msgid-Bugs-To: translations@mxlinux.org\n"
+"POT-Creation-Date: 2022-02-22 20:48+0000\n"
+"PO-Revision-Date: 2022-02-22 20:48+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "All apps"
+msgstr "所有程序"
+
+msgid "Appearance"
+msgstr "外观"
+
+msgid "Apps"
+msgstr "应用"
+
+msgid "Autostart"
+msgstr "自动启动"
+
+msgid "Backup"
+msgstr ""
+
+msgid "Basic settings"
+msgstr "基本设置"
+
+msgid "Browser"
+msgstr "浏览器"
+
+msgid "Change"
+msgstr ""
+
+msgid "Configure"
+msgstr "配置"
+
+#. The name of the Conky system monitor
+msgid "Conky"
+msgstr "Conky"
+
+#. Turn Conky Off or On
+msgid "Conky (toggle)"
+msgstr "切换康基"
+
+msgid "Default"
+msgstr "缺省"
+
+msgid "Desktop icons"
+msgstr "桌面图标"
+
+#. Desktop icons (off/in)
+msgid "Desktop icons (toggle)"
+msgstr "切换图标"
+
+msgid "Detailed settings"
+msgstr "详细设置"
+
+msgid "Disable default dock"
+msgstr "禁用默认底座"
+
+msgid "Display"
+msgstr "显示"
+
+#. Special dock for touchscreen use
+msgid "Dock (touchscreen)"
+msgstr "底座（触摸屏）"
+
+#. The name of the Dockmaker tool
+msgid "Dockmaker"
+msgstr ""
+
+msgid "Docks"
+msgstr "程序坞"
+
+msgid "Email"
+msgstr "邮件"
+
+msgid "Exit"
+msgstr "离开"
+
+msgid "File manager"
+msgstr ""
+
+msgid "Fluxbox"
+msgstr ""
+
+msgid "Help"
+msgstr "帮助"
+
+#. The name of Fluxbox init file - do not translate
+msgid "Init"
+msgstr "啟動"
+
+msgid "Keyboard"
+msgstr ""
+
+#. Hot keys / keyboard shortcuts
+msgid "Keys"
+msgstr "钥匙"
+
+#. Close a window
+msgid "Kill a window"
+msgstr "杀死一个窗口"
+
+#. Close the dock
+msgid "Kill dock"
+msgstr "杀死船坞"
+
+msgid "Leave"
+msgstr "离开"
+
+msgid "Logout"
+msgstr "注销"
+
+msgid "MX Settings manager"
+msgstr "MX设置管理器"
+
+msgid "Main"
+msgstr ""
+
+msgid "Menu--desktop"
+msgstr "菜单--桌面"
+
+msgid "Menu--detailed"
+msgstr "菜单--详细说明"
+
+msgid "Menus"
+msgstr "菜单"
+
+#. To start desktop system info monitors tool
+msgid "Monitors"
+msgstr ""
+
+msgid "Music"
+msgstr "音乐"
+
+#. Do not translate
+msgid "Openbox 3"
+msgstr ""
+
+#. Hide 
+msgid "Out of sight"
+msgstr ""
+
+#. The style overlay
+msgid "Overlay"
+msgstr ""
+
+msgid "Reboot"
+msgstr "重启"
+
+msgid "Recent files"
+msgstr "最近文件"
+
+msgid "Refresh"
+msgstr ""
+
+msgid "Rotate"
+msgstr ""
+
+msgid "Run"
+msgstr "运行"
+
+msgid "Select"
+msgstr ""
+
+msgid "Separate"
+msgstr ""
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Settings manager"
+msgstr ""
+
+msgid "Shutdown"
+msgstr "关机"
+
+msgid "Special dock"
+msgstr "特殊码头"
+
+msgid "Special panel"
+msgstr "特别小组"
+
+msgid "Startup"
+msgstr ""
+
+msgid "Style"
+msgstr "样式"
+
+msgid "Styles"
+msgstr ""
+
+msgid "Suspend"
+msgstr "挂起"
+
+#. notification area
+msgid "Systray"
+msgstr "系统盘"
+
+msgid "Terminal"
+msgstr "终端"
+
+msgid "Theme"
+msgstr "主题"
+
+#. To turn Off/On autohide of the dock
+msgid "Toggle autohide dock"
+msgstr "切换自动隐藏Dock"
+
+#. To turn Off/On autohide of the tint2 panel
+msgid "Toggle autohide panel"
+msgstr "切换自动隐藏面板"
+
+#. To turn Off/On autohide of the tint2 dock
+msgid "Toggle autohide panel-dock"
+msgstr ""
+
+#. To turn Off/On autohide of the Fluxbox toolbar
+msgid "Toggle autohide toolbar"
+msgstr "切换自动隐藏工具条"
+
+#. Turn Conky Off or On 
+msgid "Toggle conky"
+msgstr "切换康基"
+
+#. To disable / enable iDesk tool
+msgid "Toggle iDesk"
+msgstr "切换iDesk"
+
+#. To switch display of desktop icons Off or On provide by iDesk tool
+msgid "Toggle icons"
+msgstr "切换图标"
+
+#. To turn Off/On the system monitors tool
+msgid "Toggle monitors"
+msgstr "切换显示器"
+
+msgid "Toolbar"
+msgstr "工具栏"
+
+#. To turn off / on the dock for touchscreen
+msgid "Touch dock (toggle)"
+msgstr "触摸屏底座（切换）"
+
+msgid "Touchscreen"
+msgstr "触摸屏"
+
+msgid "Traditional"
+msgstr ""
+
+msgid "Update list"
+msgstr ""
+
+msgid "Wallpaper"
+msgstr "壁纸"
+
+msgid "Window"
+msgstr "窗口"

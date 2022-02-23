@@ -1,0 +1,268 @@
+# Italian translations for mxfb-menu package.
+# This file is put in the public domain.
+# Automatically generated, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mxfb-menu\n"
+"Report-Msgid-Bugs-To: translations@mxlinux.org\n"
+"POT-Creation-Date: 2022-02-22 20:48+0000\n"
+"PO-Revision-Date: 2022-02-22 20:48+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "All apps"
+msgstr "Tutte le app."
+
+msgid "Appearance"
+msgstr "Aspetto"
+
+msgid "Apps"
+msgstr "Applicazioni"
+
+msgid "Autostart"
+msgstr "Autoarranque"
+
+msgid "Backup"
+msgstr "Backup"
+
+msgid "Basic settings"
+msgstr "Impostazioni di base"
+
+msgid "Browser"
+msgstr "Browser"
+
+msgid "Change"
+msgstr "Cambia"
+
+msgid "Configure"
+msgstr "Configura"
+
+#. The name of the Conky system monitor
+msgid "Conky"
+msgstr "Conky"
+
+#. Turn Conky Off or On
+msgid "Conky (toggle)"
+msgstr "Interruttore conky"
+
+msgid "Default"
+msgstr "Predefinito"
+
+msgid "Desktop icons"
+msgstr "Icone della scrivania"
+
+#. Desktop icons (off/in)
+msgid "Desktop icons (toggle)"
+msgstr "Interruttore icone"
+
+msgid "Detailed settings"
+msgstr "Impostazioni dettagliate"
+
+msgid "Disable default dock"
+msgstr "Disabilita dock di default"
+
+msgid "Display"
+msgstr "Schermo"
+
+#. Special dock for touchscreen use
+msgid "Dock (touchscreen)"
+msgstr "Dock (schermo tattile)"
+
+#. The name of the Dockmaker tool
+msgid "Dockmaker"
+msgstr "Crea dock"
+
+msgid "Docks"
+msgstr "Barre Dock"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Exit"
+msgstr "Abbandona"
+
+msgid "File manager"
+msgstr "Gestore dei file"
+
+msgid "Fluxbox"
+msgstr "Fluxbox"
+
+msgid "Help"
+msgstr "Aiuto"
+
+#. The name of Fluxbox init file - do not translate
+msgid "Init"
+msgstr "Init"
+
+msgid "Keyboard"
+msgstr "Tastiera"
+
+#. Hot keys / keyboard shortcuts
+msgid "Keys"
+msgstr "Tasti"
+
+#. Close a window
+msgid "Kill a window"
+msgstr "Termina una finestra"
+
+#. Close the dock
+msgid "Kill dock"
+msgstr "Termina dock"
+
+msgid "Leave"
+msgstr "Abbandona"
+
+msgid "Logout"
+msgstr "Esci"
+
+msgid "MX Settings manager"
+msgstr "Gestione delle impostazioni MX"
+
+msgid "Main"
+msgstr "Principale"
+
+msgid "Menu--desktop"
+msgstr "Menu--desktop"
+
+msgid "Menu--detailed"
+msgstr "Menu--dettagliato"
+
+msgid "Menus"
+msgstr "Menu"
+
+#. To start desktop system info monitors tool
+msgid "Monitors"
+msgstr "Schermi"
+
+msgid "Music"
+msgstr "Musica"
+
+#. Do not translate
+msgid "Openbox 3"
+msgstr ""
+
+#. Hide 
+msgid "Out of sight"
+msgstr "Fuori dal campo visivo"
+
+#. The style overlay
+msgid "Overlay"
+msgstr "Sovrapposizione"
+
+msgid "Reboot"
+msgstr "Riavvia"
+
+msgid "Recent files"
+msgstr "File recenti"
+
+msgid "Refresh"
+msgstr "Aggiorna"
+
+msgid "Rotate"
+msgstr "Ruota"
+
+msgid "Run"
+msgstr "Esegui..."
+
+msgid "Select"
+msgstr "Seleziona"
+
+msgid "Separate"
+msgstr "Separa"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Settings manager"
+msgstr "Gestore delle impostazioni"
+
+msgid "Shutdown"
+msgstr "Arresta"
+
+msgid "Special dock"
+msgstr "Dock speciale"
+
+msgid "Special panel"
+msgstr "Pannello speciale"
+
+msgid "Startup"
+msgstr "Avvio"
+
+msgid "Style"
+msgstr "Stile"
+
+msgid "Styles"
+msgstr "Stili"
+
+msgid "Suspend"
+msgstr "Sospendi"
+
+#. notification area
+msgid "Systray"
+msgstr "Systray"
+
+msgid "Terminal"
+msgstr "Terminale"
+
+msgid "Theme"
+msgstr "Tema"
+
+#. To turn Off/On autohide of the dock
+msgid "Toggle autohide dock"
+msgstr "Interruttore nascondi automaticamente il dock"
+
+#. To turn Off/On autohide of the tint2 panel
+msgid "Toggle autohide panel"
+msgstr "Interruttore nascondi automaticamente pannello"
+
+#. To turn Off/On autohide of the tint2 dock
+msgid "Toggle autohide panel-dock"
+msgstr ""
+
+#. To turn Off/On autohide of the Fluxbox toolbar
+msgid "Toggle autohide toolbar"
+msgstr "Interruttore nascondi automaticamente la barra degli strumenti"
+
+#. Turn Conky Off or On 
+msgid "Toggle conky"
+msgstr "Interruttore conky"
+
+#. To disable / enable iDesk tool
+msgid "Toggle iDesk"
+msgstr "Interruttore iDesk"
+
+#. To switch display of desktop icons Off or On provide by iDesk tool
+msgid "Toggle icons"
+msgstr "Interruttore icone"
+
+#. To turn Off/On the system monitors tool
+msgid "Toggle monitors"
+msgstr "Interruttore schermi"
+
+msgid "Toolbar"
+msgstr "Barra degli strumenti"
+
+#. To turn off / on the dock for touchscreen
+msgid "Touch dock (toggle)"
+msgstr "Touchscreen dock (toggle)"
+
+msgid "Touchscreen"
+msgstr "Touchscreen"
+
+msgid "Traditional"
+msgstr "Tradizionale"
+
+msgid "Update list"
+msgstr "Elenco aggiornamenti"
+
+msgid "Wallpaper"
+msgstr "Wallpaper"
+
+msgid "Window"
+msgstr "Finestra"
