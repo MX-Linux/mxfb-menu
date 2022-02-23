@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 22 Feb 2022 18:52:09 -0500
+Source: mxfb-menu
+Binary: mxfb-menu
+Architecture: source armhf
+Version: 22.02.01mx
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Description:
+ mxfb-menu  - Localization for fluxbox and openbox menus.
+Changes:
+ mxfb-menu (22.02.01mx) mx; urgency=medium
+ .
+   * Initial build.
+Checksums-Sha1:
+ f08574e3b668b186403a04d5c6b7022ee9c4a381 596 mxfb-menu_22.02.01mx.dsc
+ 284107b53b35c7da1e90b26361b5af0fa334c877 32784 mxfb-menu_22.02.01mx.tar.xz
+ 26a7e61e195bb18f2a1dcf72e649ec2b8eaf57c4 6165 mxfb-menu_22.02.01mx_armhf.buildinfo
+ d8ea8453a6b3185ab71e6f30b745e607928b65a3 25684 mxfb-menu_22.02.01mx_armhf.deb
+Checksums-Sha256:
+ 0f8c79ee68ec23fae5adb5b9521b2b9757cf5077f901bb1038e857b03b07ea56 596 mxfb-menu_22.02.01mx.dsc
+ 386d458ca64bcad011143145acb694c62151c8a06447af8e6878451d118a9074 32784 mxfb-menu_22.02.01mx.tar.xz
+ bee92dcdd6ff4c9c3a6141e26e5f27ccface3b73cb2bdd64f7eb4f33b2097131 6165 mxfb-menu_22.02.01mx_armhf.buildinfo
+ 61b78725e5ad13a4634a066cdb1fb6d915066d535850bfeff54df3003f695373 25684 mxfb-menu_22.02.01mx_armhf.deb
+Files:
+ f73cac76b0777e69f77ef5395978123c 596 x11 optional mxfb-menu_22.02.01mx.dsc
+ cde57cf74c8191f3fbf2f08306ec007c 32784 x11 optional mxfb-menu_22.02.01mx.tar.xz
+ c59168078acb202cf777e650570a6a96 6165 x11 optional mxfb-menu_22.02.01mx_armhf.buildinfo
+ 341667a678ed63ccdda1d7e89676aa12 25684 x11 optional mxfb-menu_22.02.01mx_armhf.deb

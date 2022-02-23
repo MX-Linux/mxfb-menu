@@ -10,7 +10,7 @@ Build-Depends:
 Standards-Version: 3.9.6
 
 Package: mxfb-menu
-Architecture: all
+Architecture: armhf
 Pre-Depends: ${misc:Pre-Depends}
 Depends:
  python3,

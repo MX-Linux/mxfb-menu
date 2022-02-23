@@ -1,23 +1,20 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
 Format: 1.0
 Source: mxfb-menu
 Binary: mxfb-menu
-Architecture: all source
+Architecture: armhf source
 Version: 22.02.01mx
 Checksums-Md5:
- 1ea2682cc25b456308413b41ddafa71f 1504 mxfb-menu_22.02.01mx.dsc
- 73ae2fce5792c79d05f5bd7655d6e6ee 25684 mxfb-menu_22.02.01mx_all.deb
+ f73cac76b0777e69f77ef5395978123c 596 mxfb-menu_22.02.01mx.dsc
+ 341667a678ed63ccdda1d7e89676aa12 25684 mxfb-menu_22.02.01mx_armhf.deb
 Checksums-Sha1:
- 9380947ae40a8ff01eeda966d64605261d72b2d9 1504 mxfb-menu_22.02.01mx.dsc
- 69360cebda5fc807f039e9d233ece9d8e3d85885 25684 mxfb-menu_22.02.01mx_all.deb
+ f08574e3b668b186403a04d5c6b7022ee9c4a381 596 mxfb-menu_22.02.01mx.dsc
+ d8ea8453a6b3185ab71e6f30b745e607928b65a3 25684 mxfb-menu_22.02.01mx_armhf.deb
 Checksums-Sha256:
- 5272299cd8f0430b388503c6ba3cc97c157825f485a536992e5878689c0b0cc7 1504 mxfb-menu_22.02.01mx.dsc
- 1841db8ee085e3a3d86b01d7c966363e134456102128c9bb48c8732491e0d746 25684 mxfb-menu_22.02.01mx_all.deb
+ 0f8c79ee68ec23fae5adb5b9521b2b9757cf5077f901bb1038e857b03b07ea56 596 mxfb-menu_22.02.01mx.dsc
+ 61b78725e5ad13a4634a066cdb1fb6d915066d535850bfeff54df3003f695373 25684 mxfb-menu_22.02.01mx_armhf.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Wed, 23 Feb 2022 01:42:31 +0100
+Build-Date: Wed, 23 Feb 2022 03:28:03 +0100
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-libraries
@@ -218,21 +215,3 @@ Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
  SOURCE_DATE_EPOCH="1645573929"
-
------BEGIN PGP SIGNATURE-----
-
-iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmIVgwATHGZlaGxpeEBt
-eGxpbnV4Lm9yZwAKCRAvV48brJ2b6eslD/9tiU6kledEcSqpN52CUnN3otJFLSwv
-uQMDZx30J9NlJxq+aqq9dEHA6D1HbEHiYZ4tSAWxm28kc7JUZHJDv1gJvqK3vEUW
-OL4edFsv8nFL+empir8qYSwAHjrImZlBlL/ASbeag0v28cbEvlZamCIzWf5oj5k2
-up9/BPdMBr1m5YENBVrBVAxmxRrdJwNTH9TgM9qNUaXtCuAenFBKZF34eyy0kJcP
-X8LHfJfTbW0LudPkczRamayi90w+ISLjhQGr+nwL+fVqfAqw/oFihWPfonMfV3yt
-NeecKL4FDYgubIzao7jNKbgv8Hs7nXIX8MdA6wc9ZPWJMidHMvouQjYhXDiMfQNs
-Jsvc+pPJT1tfoLap4hN1M4NdB9zgkxxKdQYYWGPTisWlJnb4hjaOQibsuqeaEZK/
-QWsRCZ9XIlL2B3GXgKvAIbslpFIHMlOpwjO81mlo/XbpZZUrVo3u0wte5A5mqmJ2
-aGXqhcy5OKcgQ+hZ52QoOAxEdMRlSKC36/lBu/6bRBA5VK6Zc8OTZ6RV3fIyc+lN
-x/IMZ3b8zL8p7eSMYQGHcdzNfRjvRuJbeoZNNN54wS2kJtTB67JuM9d3FZmiURd3
-hKIHG+Ir+S46AeSu8WRddOIqB98f8xzKU6XG0D5A7XAhSZN1+7k8lmobwJRM2xCh
-rDfHshOReLW3nw==
-=GEay
------END PGP SIGNATURE-----
