@@ -1,20 +1,23 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Format: 1.0
 Source: mxfb-menu
 Binary: mxfb-menu
 Architecture: armhf source
-Version: 22.02.01mx
+Version: 22.03.01mx
 Checksums-Md5:
- f73cac76b0777e69f77ef5395978123c 596 mxfb-menu_22.02.01mx.dsc
- 341667a678ed63ccdda1d7e89676aa12 25684 mxfb-menu_22.02.01mx_armhf.deb
+ d484a87c0ac650a7b2e66134249933e7 1508 mxfb-menu_22.03.01mx.dsc
+ 1692276168c8a33b4e8912b847612d29 25876 mxfb-menu_22.03.01mx_armhf.deb
 Checksums-Sha1:
- f08574e3b668b186403a04d5c6b7022ee9c4a381 596 mxfb-menu_22.02.01mx.dsc
- d8ea8453a6b3185ab71e6f30b745e607928b65a3 25684 mxfb-menu_22.02.01mx_armhf.deb
+ 59d87076fff0922ccbf287610ed14bf29f16dc8e 1508 mxfb-menu_22.03.01mx.dsc
+ b5f7bb23afe26e5a69aebe14050a2108683293c0 25876 mxfb-menu_22.03.01mx_armhf.deb
 Checksums-Sha256:
- 0f8c79ee68ec23fae5adb5b9521b2b9757cf5077f901bb1038e857b03b07ea56 596 mxfb-menu_22.02.01mx.dsc
- 61b78725e5ad13a4634a066cdb1fb6d915066d535850bfeff54df3003f695373 25684 mxfb-menu_22.02.01mx_armhf.deb
+ f4c1cc87a3cccdfa374c8e3277ad74d453a00c4632d2a32e2d5d91c0777a79f6 1508 mxfb-menu_22.03.01mx.dsc
+ 0cdc659697ed4f2355c5d150a54a12352156e113c17306644632ca8a7c93c7cc 25876 mxfb-menu_22.03.01mx_armhf.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Wed, 23 Feb 2022 03:28:03 +0100
+Build-Date: Tue, 01 Mar 2022 13:49:34 +0100
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-libraries
@@ -214,4 +217,22 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1645573929"
+ SOURCE_DATE_EPOCH="1646133078"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmIeFl8THGZlaGxpeEBt
+eGxpbnV4Lm9yZwAKCRAvV48brJ2b6Z7bD/0UIgJPSN09Zbh585GGPmAYjTCYfBlT
+NW/Uvu9WKUIe0dz+yxmxndqpoJULsPVvs7qsoCgnrItIctg/t3gcKPEd4Qak2nFl
+2T3cZE8/v/lWx5a9jaNpOwCWDUPEGs1tdRpW/Kohcvw2k38yZAVy1GXxKBUyYBBP
+yMqWnZ4+rX9Y/JUTxlIXewTAFijJx8i1CK1S9IICh3P0r2jQTtgwlHWlUXaYUcBw
+WLFzUD4u5ncRV47Tt5MZqbRvxexUoVnrCihsP8WbdPSBmK73uT3NJrsr85LF3awt
+jKVqe7l/oL1I4cwLzj5qG+fwi7Gu569Z0DNAmT1qqYAxjFpKaPjS0N5w70SzWLdO
+yjls0OZ32Y8IEwYFBM0HL0XT+6rlJQcW/9n/UQQ3Sjd+ZcOjGbvIhLW8iLm7ggSK
+omlov/pUeAsh7d2w7wOjXFHe/tTtC5eeyd/1mAUriQ+xbV6pt40hsKTD8eQJ6khg
+2/cm9ENjN56vJIikvCJkikpFtJtJRNpBpG0JIjZTkThPZfwZX7UHF1Xq408OLFA+
+F3mR51UBGkEeZAQvIJZwQ29SMdLB70nrVJrkbde2eiYw7j2uyr7zfc8IQqZ7UsFy
+3rWIIG2yqTUKhAfkXHtNhvlyVRa7Iz6ZIDcvOt9J08NZJFwBIZuSbjApBuWJpnvq
+EZ9FT9SRb55hCw==
+=u+fq
+-----END PGP SIGNATURE-----

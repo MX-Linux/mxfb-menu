@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
+export DH_ALWAYS_EXCLUDE=CVS:.svn:GIT:.git:debs
+#export DH_VERBOSE=1
+
 %:
 	dh $@  --builddirectory=../mesonbuild
+
+override_dh_auto_clean:
+	dh_auto_clean
+	@rm debs/* 2>/dev/null || :

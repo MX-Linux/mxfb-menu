@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+#
+# mxfb-menu-ob-l10n
+#
+# Openbox menu localizaion (l10n)
+# Script to demonstrate creation of static localized Openbox menus
+# Released under GPL by MX Linux Devs
+# Initial draft create by fehlix at mx linux dot org,  Februar 2022
+# Version: 22.03.01
+
 
 import gettext, os, re
 import xml.etree.ElementTree as ET
@@ -12,7 +21,7 @@ menu_file  = "menu-mx.xml"
 # menu file localized: menu-mx_{LOCALE}.xml, e.g. menu-mx_pt_BR.xml
 # LOCALE := ll  || ll_RR  ( ll - language code ; RR - region code)
 
-home = os.getenv("HOME")
+home    = os.getenv("HOME")
 pkg_dir = f"/usr/share/mxfb-menu/openbox"
 sys_dir = f"/etc/xdg/openbox"
 usr_dir = f"{home}/.config/openbox"
@@ -30,10 +39,11 @@ domain     = "mxfb-menu"
 localedir  = "/usr/share/locale"
 
 def gettext_translate(lang="en"):
-	return gettext.translation(domain, localedir=localedir, languages=(lang,), fallback=True).gettext
+	return gettext.translation(domain, localedir=localedir,
+					languages=(lang,), fallback=True).gettext
 
 #-----------------------------------------------------------------------
-# removesuffix - available with python 3.9
+# remove suffix
 #-----------------------------------------------------------------------
 def remove_suffix(text, suffix=None):
 	if suffix:
@@ -55,7 +65,7 @@ lang = [ x for x in locales if os.path.exists(f"{localedir}/{x}/LC_MESSAGES/{dom
 ( lang ) = ( lang[0] if lang else "")
 if not lang:
 	lang = "en"
-	
+
 #-----------------------------------------------------------------------
 # xml namespace
 #-----------------------------------------------------------------------
@@ -114,6 +124,7 @@ try:
 		if fmx not in rc and fmm in rc:
 			rc = rc.replace(fmm, f"{fmx}\n    {fmm}")
 			f.seek(0)
+			f.truncate(0)
 			f.write(rc)
 except Exception as e:
 	print(e)
@@ -121,8 +132,8 @@ except Exception as e:
 #-------------------------------------------------
 
 try:
-    run(["pidof", "-q", "openbox"], check=True, stderr=DEVNULL, stdout=DEVNULL)
-    print("openbox  --reconfigure")
-    run(["openbox", "--reconfigure"], stderr=DEVNULL, stdout=DEVNULL)
+	run(["pidof", "-q", "openbox"], check=True, stderr=DEVNULL, stdout=DEVNULL)
+	print("openbox  --reconfigure")
+	run(["openbox", "--reconfigure"], stderr=DEVNULL, stdout=DEVNULL)
 except:
-    print("openbox not running")
+	print("openbox not running")

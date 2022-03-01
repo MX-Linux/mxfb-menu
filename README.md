@@ -1,8 +1,13 @@
 ## MXFB-MENU
-## meson build
-##
+Localization (l10n) of static Fluxbox an Openbox menus
+#
 ## How to build and install
+# meson build
+________
+debuild -uc -us -aarmhf
+```
+# install
 ________
 ```
-sudo apt-get install mx-menu
+apt install mx-menu
 ```
