@@ -9,7 +9,7 @@
 # Version: 22.03.01
 
 from subprocess import run, DEVNULL
-import gettext, os, re, shutils
+import gettext, os, re
 
 #-----------------------------------------------------------------------
 # directories and files
@@ -82,7 +82,7 @@ _ = gettext_translate(lang)
 #-----------------------------------------------------------------------
 # default locale
 #-----------------------------------------------------------------------
-if lang in "en":
+if lang in "en" and os.path.exists(fbxmenu):
 	with open(init, 'r+') as file:
 		try:
 			ini = file.read()
@@ -97,14 +97,7 @@ if lang in "en":
 		except Exception as e:
 			print(e)
 			exit(1)
-	
-	if not os.path.exists(fbxmenu):
-		try:
-			shutil.copy(xdgmenu, fbxmenu)
-			exit(0)
-		except Exception as e:
-			print(e)
-			exit(1)
+	exit(0)
 
 #-----------------------------------------------------------------------
 # pattern
@@ -171,7 +164,6 @@ for subfile in subfiles.keys():
 			continue
 	with open(l10nfile, 'w') as file:
 		try:
-			file.write(m)
 			file.write(m)
 			inc2l10n[subfiles[subfile]] = l10nfile
 		except Exception as e:

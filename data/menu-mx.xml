@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu xmlns="http://openbox.org/" 
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-              xsi:schemaLocation="http://openbox.org/     file:///usr/share/openbox/menu.xsd">
+              xsi:schemaLocation="http://openbox.org/
+                                  file:///usr/share/openbox/menu.xsd">
   <menu id="root-menu" label="Openbox 3">
     <item label="All apps">
       <action name="Execute">
@@ -80,7 +81,7 @@
       </item>
       <item label="Display">
         <action name="Execute">
-          <execute>arandr</execute>
+          <execute>env SUDO_ASKPASS=/usr/lib/rc-gui/pwdrcg.sh sudo -AE arandr</execute>
         </action>
       </item>
       <item label="Keys">

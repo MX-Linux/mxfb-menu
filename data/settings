@@ -5,10 +5,10 @@
         [exec] (Init) {exo-open ~/.fluxbox/init}
         [exec] (Keys) {exo-open ~/.fluxbox/keys}
         [submenu] (Menus) 
-           [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
-           [exec] (Appearance) {exo-open ~/.fluxbox/submenus/appearance}
-           [exec] (Settings) {exo-open ~/.fluxbox/submenus/settings}
-         [exec] (Out of sight) {exo-open ~/.fluxbox/submenus/out-of-sight}
+            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
+            [exec] (Appearance) {exo-open ~/.fluxbox/submenus/appearance}
+            [exec] (Settings) {exo-open ~/.fluxbox/submenus/settings}
+            [exec] (Out of sight) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
         [exec] (Startup) {featherpad ~/.fluxbox/startup}
@@ -16,8 +16,8 @@
         [config] (Window)         
     [end]
     [submenu] (Display)
-    [exec] (Change) {env SUDO_ASKPASS=/usr/lib/rc-gui/pwdrcg.sh sudo -AE arandr}
-    [exec](Touchscreen) {xdg-open /usr/share/mxflux/help/touchscreen-display}
+        [exec] (Change) {env SUDO_ASKPASS=/usr/lib/rc-gui/pwdrcg.sh sudo -AE arandr}
+        [exec](Touchscreen) {xdg-open /usr/share/mxflux/help/touchscreen-display}
     [end]
     [submenu] (Keyboard)
         [exec] (DE) {setxkbmap de}
