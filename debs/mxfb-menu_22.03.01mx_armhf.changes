@@ -21,35 +21,35 @@ Changes:
    * addjust password prompt for arandr in menu
    * adjust fluxbox and openbox menu entries
 Checksums-Sha1:
- 71e7cd6eb7c030fce2131d4d4ed1f384d7b26e59 1508 mxfb-menu_22.03.01mx.dsc
- d5159b07b68f48b99ffb2def9471979b9bf45b64 32976 mxfb-menu_22.03.01mx.tar.xz
- 34ee94d4ed376c530fd1c2bfb481234feb4c166f 7080 mxfb-menu_22.03.01mx_armhf.buildinfo
- 55efc1e10d34293e51a7489f1c8cced5129a2584 25852 mxfb-menu_22.03.01mx_armhf.deb
+ 466af38a210cb94994fe5d1b2c04efb115295370 1508 mxfb-menu_22.03.01mx.dsc
+ f045e0b470fcda338323c3c4276d744661ccec43 32988 mxfb-menu_22.03.01mx.tar.xz
+ 5e4e718551f2fecea31da82d62f53e2c1798b64b 7144 mxfb-menu_22.03.01mx_armhf.buildinfo
+ c8798322016cb46b042a0d6d05863322738ac4af 25876 mxfb-menu_22.03.01mx_armhf.deb
 Checksums-Sha256:
- 39b20cac2a16a5d85a7c924977e2c45173ad604ca79b716c3bf5a7169396405a 1508 mxfb-menu_22.03.01mx.dsc
- bc68221845b69e59a063c2ef13bd5875f970d22d20798614e57da9d4cc5d5e3e 32976 mxfb-menu_22.03.01mx.tar.xz
- 3d210179c5fb6f2e2ce7cb9c0399ba21e88e617f4cdf3a1af5884c9a73df64ff 7080 mxfb-menu_22.03.01mx_armhf.buildinfo
- 49c69168e9d44eb3e203145990814f720243bde6b607170954df38a5f3a16dae 25852 mxfb-menu_22.03.01mx_armhf.deb
+ 0d3400785851e02589bcb9349956a3f5cac14b5ee6e654e0cc96ea0e86f1b27c 1508 mxfb-menu_22.03.01mx.dsc
+ e48fde830b906f03a6dd366f33f2fefe12aa74a66f345793a69690041da3f555 32988 mxfb-menu_22.03.01mx.tar.xz
+ 0af47e29620d9b3a79f9feee743fd4aae238822cf61bdb6c507a6156ecd45142 7144 mxfb-menu_22.03.01mx_armhf.buildinfo
+ e2ef512afb171788800ed57241eec6cc6d99c94081c04cc20d037f78ded4bfcd 25876 mxfb-menu_22.03.01mx_armhf.deb
 Files:
- 0ae81ee4ed4b7b1b7e60219b804d6e52 1508 x11 optional mxfb-menu_22.03.01mx.dsc
- 9f940916631150d9bfaa076f6e61bb3d 32976 x11 optional mxfb-menu_22.03.01mx.tar.xz
- 99b750b24eb3bda668b067490910e2db 7080 x11 optional mxfb-menu_22.03.01mx_armhf.buildinfo
- 323409a1fda1ff22485c5db30fed66c2 25852 x11 optional mxfb-menu_22.03.01mx_armhf.deb
+ f489fd3558677d96a09d913dd5ac93ff 1508 x11 optional mxfb-menu_22.03.01mx.dsc
+ 7f80eea5ee486bafe8f9ad348c165ee3 32988 x11 optional mxfb-menu_22.03.01mx.tar.xz
+ 895610632054940fedccabfe18444a13 7144 x11 optional mxfb-menu_22.03.01mx_armhf.buildinfo
+ f457d43f6266269ff27d207b7f3bbd3d 25876 x11 optional mxfb-menu_22.03.01mx_armhf.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmIeyGkTHGZlaGxpeEBt
-eGxpbnV4Lm9yZwAKCRAvV48brJ2b6VUlEACpVKvA6/FpVKjfHAwmQc27I82LQyod
-QWzZDpZMjJ0y78E6YP+B9X6VBisnSZezDmlHNNzMUKU/QONMaFh3Xax/OSU6G3Pn
-dGVID8DMCW0Dq9pQjD3jAPK2ktzQIVvy0C3Qt604yyq7DM6B/wfJUNk9rp5q8zv9
-s6ee/99e+JF3mcxCmMvW02jtIVukjhJy+hmEXfnXIvGEAyMjq2LNo2PUxdlLiP8V
-HSMGRWxkZ/p6qhfC8lMmot3EI1vRmJnA1QNrhgDhzPr1yXD4lU8V5DcupC85ziA+
-yOnFj/G3ws96mBKicr93HRz4/sXZZUPb448yehWbvpkmAMSBLpPSdowram7oJJwV
-1ctvdDH3dwI9nywqSO4i9cr09PJhmcZDf9coxVm8SoJuHVUYCtc9PYEsdGgtJvRZ
-YCp0wgCtn6xkFAD1JKWNGYzUpqUT7i+lxIzyT21V/iYpflArNNnjpDC5Pg6zDwvm
-kgbLpJWe2tf4Ty4HqKyiZ/1FyMlnyrHPmFtTfrFxtmZEif7BE6kEWttfykfDfXbe
-bHDcO/mXZ4H/xbJm+M+ZYo5hxFNdEfksvfI/balnPbwq6FUEer30G1Rm7RqhnzwB
-rMuMK4Q6AD0F6FrS85iLz0DBay4724oXRq10W71kGn3sxh2UEZfGnWBrUDVtJJAF
-jzAtqB5nutOS/g==
-=TMqJ
+iQJHBAEBCgAxFiEEgRnC8/wKXRM2S0xLL1ePG6ydm+kFAmI5GLcTHGZlaGxpeEBt
+eGxpbnV4Lm9yZwAKCRAvV48brJ2b6b68D/956LDMkn5Xlkf19SN0XRnLIiI1xwNN
++P5GbdDlR//5m892Qq7lhu4C9AAAf8XRaPjza2cq3EHOZJqi5iS0djgVQOLe/QNf
+WrRft1iboYMpAyUEW9p/8QJAh7giWY3iVF5YTL3V+8m/Fx7RBkRo1A4THWmVaL2x
+eE07ZLgGZBrIbSbLthdMuOyPjoGW5+7Blb+zzwF8WGe6NypUF4wjmn3C1E4T1bn1
+Zep5UxD0398TpDJ6Kzc8mt1K/p5Z0+527bmfpbdTIIqwhXksCNBbw/sqkXpz5fYd
+EfseqbuOQvmWce/YfzhtBcrJZtMNB8h8fBvruvSeO6xbS4atwL1HHPX1JbwSggVn
+YrCFckwgDfJYg/mlRO5+Pi7WtZKtFa74Pj9u4io27OrGf3uq41QdttbBvzdpfe6r
+jJwXgCOMD3Bm2r98U5vf+eu42468s1CoxbT385MldErdZa8g6slEfiqHRax16oXr
+GHnCIZmyGWrTvN2QMGVVphgeYcCwpnmNk2CXHYkCfiZPI58fGQ43xfUQxtNIvrkk
+ouv6lR3P6AETqaoFnDOxWg5elvzdZaHugdFbvnQGcG/qXN2Mzkebq9TUFH2TjxCl
+cOxPF3b1oXz43Lud7dRCVMbta4Lze0EZL6FNCPL7oZtJjojLiLPzsXjed4CVM21l
+HV6KQQApUApCHQ==
+=pibd
 -----END PGP SIGNATURE-----

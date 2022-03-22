@@ -1,4 +1,4 @@
-project('mxfb-menu', version: '22.02.01mx', meson_version: '>=0.52.0')
+project('mxfb-menu', version: '22.03.01mx', meson_version: '>=0.52.0')
 
 i18n = import('i18n')
 gettext_package = meson.project_name()

@@ -1,23 +1,23 @@
  dpkg-buildpackage -us -uc -ui -sa -aarmhf
-dpkg-buildpackage: info: source package mxfb-menu
-dpkg-buildpackage: info: source version 22.03.01mx
-dpkg-buildpackage: info: source distribution mx
-dpkg-buildpackage: info: source changed by fehlix <fehlix@mxlinux.org>
-dpkg-architecture: warning: specified GNU system type arm-linux-gnueabihf does not match CC system type x86_64-linux-gnu, try setting a correct CC environment variable
+dpkg-buildpackage: Information: Quellpaket mxfb-menu
+dpkg-buildpackage: Information: Quellversion 22.03.01mx
+dpkg-buildpackage: Information: Quelldistribution mx
+dpkg-buildpackage: Information: Quelle geändert durch fehlix <fehlix@mxlinux.org>
+dpkg-architecture: Warnung: angegebener GNU-Systemtyp arm-linux-gnueabihf passt nicht zu CC-Systemtyp x86_64-linux-gnu, versuchen Sie, eine korrekte CC-Umgebungsvariable zu setzen
  dpkg-source --before-build .
-dpkg-buildpackage: info: host architecture armhf
+dpkg-buildpackage: Information: Host-Architektur armhf
  fakeroot debian/rules clean
 dh clean  --builddirectory=../mesonbuild
    debian/rules override_dh_auto_clean
-make[1]: Entering directory '/tmpdir/build/mxfb-menu'
+make[1]: Verzeichnis „/tmpdir/build/mxfb-menu“ wird betreten
 dh_auto_clean
-make[1]: Leaving directory '/tmpdir/build/mxfb-menu'
+make[1]: Verzeichnis „/tmpdir/build/mxfb-menu“ wird verlassen
    dh_autoreconf_clean -O--builddirectory=../mesonbuild
    dh_clean -O--builddirectory=../mesonbuild
  dpkg-source -b .
-dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building mxfb-menu in mxfb-menu_22.03.01mx.tar.xz
-dpkg-source: info: building mxfb-menu in mxfb-menu_22.03.01mx.dsc
+dpkg-source: Information: Quellformat »3.0 (native)« wird verwendet
+dpkg-source: Information: mxfb-menu wird in mxfb-menu_22.03.01mx.tar.xz gebaut
+dpkg-source: Information: mxfb-menu wird in mxfb-menu_22.03.01mx.dsc gebaut
  debian/rules build
 dh build  --builddirectory=../mesonbuild
    dh_update_autotools_config -O--builddirectory=../mesonbuild
@@ -34,7 +34,7 @@ Source dir: /tmpdir/build/mxfb-menu
 Build dir: /tmpdir/build/mesonbuild
 Build type: cross build
 Project name: mxfb-menu
-Project version: 22.02.01mx
+Project version: 22.03.01mx
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
 Host machine cpu family: x86_64
@@ -122,23 +122,6 @@ Running custom install script '/usr/bin/meson --internal gettext install --subdi
 	Normalized debian/mxfb-menu/usr/share/locale/sk/LC_MESSAGES/mxfb-menu.mo
 	Normalized debian/mxfb-menu/usr/share/locale/ru/LC_MESSAGES/mxfb-menu.mo
 	Normalized debian/mxfb-menu/usr/share/locale/pt_BR/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/pt/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/pl/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/nl/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/nb/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/lt/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/ja/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/it/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/is/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/id/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/hr/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/de/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/da/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/cs/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/ca/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/bg/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/ar/LC_MESSAGES/mxfb-menu.mo
-	Normalized debian/mxfb-menu/usr/share/locale/am/LC_MESSAGES/mxfb-menu.mo
 	Normalized debian/mxfb-menu/usr/share/locale/hi/LC_MESSAGES/mxfb-menu.mo
 	Normalized debian/mxfb-menu/usr/share/locale/he_IL/LC_MESSAGES/mxfb-menu.mo
 	Normalized debian/mxfb-menu/usr/share/locale/gl_ES/LC_MESSAGES/mxfb-menu.mo
@@ -149,6 +132,23 @@ Running custom install script '/usr/bin/meson --internal gettext install --subdi
 	Normalized debian/mxfb-menu/usr/share/locale/es_ES/LC_MESSAGES/mxfb-menu.mo
 	Normalized debian/mxfb-menu/usr/share/locale/es/LC_MESSAGES/mxfb-menu.mo
 	Normalized debian/mxfb-menu/usr/share/locale/el/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/de/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/da/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/cs/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/ca/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/bg/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/ar/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/am/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/pt/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/pl/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/nl/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/nb/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/lt/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/ja/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/it/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/is/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/id/LC_MESSAGES/mxfb-menu.mo
+	Normalized debian/mxfb-menu/usr/share/locale/hr/LC_MESSAGES/mxfb-menu.mo
    dh_compress -O--builddirectory=../mesonbuild
    dh_fixperms -O--builddirectory=../mesonbuild
    dh_missing -O--builddirectory=../mesonbuild
@@ -160,12 +160,12 @@ Running custom install script '/usr/bin/meson --internal gettext install --subdi
    dh_gencontrol -O--builddirectory=../mesonbuild
    dh_md5sums -O--builddirectory=../mesonbuild
    dh_builddeb -O--builddirectory=../mesonbuild
-dpkg-deb: building package 'mxfb-menu' in '../mxfb-menu_22.03.01mx_armhf.deb'.
+dpkg-deb: Paket »mxfb-menu« wird in »../mxfb-menu_22.03.01mx_armhf.deb« gebaut.
  dpkg-genbuildinfo
  dpkg-genchanges -sa >../mxfb-menu_22.03.01mx_armhf.changes
-dpkg-genchanges: info: including full source code in upload
+dpkg-genchanges: Information: kompletter Quellcode beim Hochladen hinzufügen
  dpkg-source --after-build .
-dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+dpkg-buildpackage: Information: Alles hochzuladen; Debian-native-Paket (komplette Quelle enthalten)
 Now signing changes and any dsc files...
  signfile dsc mxfb-menu_22.03.01mx.dsc fehlix <fehlix@mxlinux.org>
 
